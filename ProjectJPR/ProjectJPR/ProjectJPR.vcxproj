@@ -74,7 +74,12 @@
       <WarningLevel>Level3</WarningLevel>
       <Optimization>Disabled</Optimization>
       <SDLCheck>true</SDLCheck>
+      <AdditionalIncludeDirectories>E:\GitHub\JPR\ProjectJPR\Glew and Glut\freeglut\include;E:\GitHub\JPR\ProjectJPR\Glew and Glut\glew-1.11.0\include;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
     </ClCompile>
+    <Link>
+      <AdditionalLibraryDirectories>E:\GitHub\JPR\ProjectJPR\Glew and Glut\glew-1.11.0\lib;E:\GitHub\JPR\ProjectJPR\Glew and Glut\freeglut\lib;%(AdditionalLibraryDirectories)</AdditionalLibraryDirectories>
+      <AdditionalDependencies>freeglut.dll;glew32.dll;%(AdditionalDependencies)</AdditionalDependencies>
+    </Link>
   </ItemDefinitionGroup>
   <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">
     <ClCompile>
@@ -90,10 +95,13 @@
       <FunctionLevelLinking>true</FunctionLevelLinking>
       <IntrinsicFunctions>true</IntrinsicFunctions>
       <SDLCheck>true</SDLCheck>
+      <AdditionalIncludeDirectories>E:\GitHub\JPR\ProjectJPR\Glew and Glut\freeglut\include;E:\GitHub\JPR\ProjectJPR\Glew and Glut\glew-1.11.0\include;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
     </ClCompile>
     <Link>
       <EnableCOMDATFolding>true</EnableCOMDATFolding>
       <OptimizeReferences>true</OptimizeReferences>
+      <AdditionalLibraryDirectories>E:\GitHub\JPR\ProjectJPR\Glew and Glut\glew-1.11.0\lib;E:\GitHub\JPR\ProjectJPR\Glew and Glut\freeglut\lib;%(AdditionalLibraryDirectories)</AdditionalLibraryDirectories>
+      <AdditionalDependencies>freeglut.dll;glew32.dll;%(AdditionalDependencies)</AdditionalDependencies>
     </Link>
   </ItemDefinitionGroup>
   <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Release|x64'">
@@ -110,6 +118,13 @@
     </Link>
   </ItemDefinitionGroup>
   <ItemGroup>
+    <ClCompile Include="..\..\..\..\workspace_visualstudio\Projects\Project1fuzja1\Project1fuzja\C_Willy.cpp" />
+    <ClCompile Include="..\..\..\..\workspace_visualstudio\Projects\Project1fuzja1\Project1fuzja\Main.cpp" />
+    <ClCompile Include="..\..\..\..\workspace_visualstudio\Projects\Project1fuzja1\Project1fuzja\Render.cpp" />
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="..\..\..\..\workspace_visualstudio\Projects\Project1fuzja1\Project1fuzja\C_Willy.h" />
+    <ClInclude Include="..\..\..\..\workspace_visualstudio\Projects\Project1fuzja1\Project1fuzja\Render.h" />
   </ItemGroup>
   <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
   <ImportGroup Label="ExtensionTargets">
